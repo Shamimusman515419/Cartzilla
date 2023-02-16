@@ -1,3 +1,21 @@
+const HeaderTop =document.getElementById("HeaderTop");
+
+
+window.addEventListener("scroll",function(){
+ if(this.window.scrollY >= 200){
+    HeaderTop.classList.add("active"); 
+ }else{
+    HeaderTop.classList.remove("active"); 
+
+ }
+ 
+})
+
+
+
+
+
+
 $('.responsive').slick({
      dots: true,
      infinite: false,
